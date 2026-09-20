@@ -25,7 +25,7 @@ def mask_email(email):
     if len(local) <= 2:
         masked_local = local[0] + "*" * (len(local) - 1)
     else:
-        masked_local = local[:2] + "*" * (len(local) - 2)
+        masked_local = local[:1] + "*" * (len(local) - 1)
     return f"{masked_local}@{domain}"
 
 
